@@ -1,0 +1,44 @@
+/*
+ * Copyright © Sean DeBellis
+ * SDRockstarStudios website
+ * template.css Style Sheet
+ * Date: 10/16/2013
+*/
+
+body {  
+    /*default*/
+    background: #696969;
+
+    /*safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linearm 0% 0%, 0% 100%, from(#ffffff), to(#696969));
+
+     /*safari 5.1, Chrome 10+ */   
+    background: -webkit-linear-gradient(top, #ffffff, #696969);
+
+    /*firefox 3.6+ */
+    background: -moz-linear-gradient(top, #ffffff, #696969);
+
+    /*IE 10*/
+    background: -ms-linear-gradient(top, #ffffff, #696969);
+
+    /*opera 11.10+ */
+    background: -o-linear-gradient(top, #ffffff, #696969);
+
+    background: -moz-linear-gradient(top left , #ffffff 0%, #696969 100%); no-repeat center center fixed; 
+    -moz-background-size: cover; -webkit-background-size: cover; -o-background-size: cover; background-size: cover}
+
+body, html {height: 100%; margin: 0; padding: 0}
+#header {background: #CCC; margin-left: 2%; width: 90%; height: 5em} 
+#header h1 {padding-top:.5em; text-align: center; font-size: 28pt; color: #000000}
+#navbar {float: left; background: #000000; margin-left: 2%; width: 90%}
+#navbar a {margin-left: 1em}
+#navbar a:link {text-decoration: none}
+#navbar a:visited {text-decoration: none}
+#navbar a:hover {color: #ff0000}
+#navbar a:active {text-decoration: none}
+#sidebar {background: #CCC; width: 18%; height: 120%; margin-left: 2%; float: left}
+#sidebar img {display: block; width: 80%; margin-top: 4%; margin-left: auto; margin-right: auto; border-style: outset; border-width: medium}
+#sidebar .box {background: #000000; display: block; margin-top: 1%; margin-left: 8%; margin-right: 8%; border: thin solid gray}
+#infohead {width: 100%; background: #ffffff; color: gray; font-size: 11pt; display: block; padding-left: 1% border: thin solid gray}
+#sidebar .personalinfo {color:gray; font-size: 8pt; display: block; margin-top: 2%; margin-left: 1%}
+
