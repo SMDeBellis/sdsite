@@ -1,0 +1,110 @@
+int pinBlue1 = 13;
+int pinRed1 = 12;
+int pinGreen = 11;
+int pinRed2 = 10;
+int pinBlue2 = 9;
+
+void setup(){
+  
+ pinMode(pinBlue1, OUTPUT);
+ pinMode(pinRed1, OUTPUT);
+ pinMode(pinGreen, OUTPUT); 
+ pinMode(pinRed2, OUTPUT);
+ pinMode(pinBlue2, OUTPUT);
+ 
+}
+void loop(){
+  
+  //forward  
+  //first blue
+  digitalWrite(pinBlue1, HIGH);
+  delay(1000);
+  digitalWrite(pinBlue1, LOW);
+  
+  //first red
+  digitalWrite(pinRed1, HIGH);
+  delay(1000);
+  digitalWrite(pinRed1, LOW);
+  
+  //green
+  digitalWrite(pinGreen, HIGH);
+  delay(1000);
+  digitalWrite(pinGreen, LOW);
+ 
+  
+  //second red
+  digitalWrite(pinRed2, HIGH);
+  delay(1000);
+  digitalWrite(pinRed2, LOW);
+  
+  //second blue
+  digitalWrite(pinBlue2, HIGH);
+  delay(1000);
+  digitalWrite(pinBlue2, LOW);
+  
+  //backward
+  
+  //second blue
+  //digitalWrite(pinBlue2, HIGH);
+  //delay(1000);
+  //digitalWrite(pinBlue2, LOW);
+
+  //second red
+  digitalWrite(pinRed2, HIGH);
+  delay(1000);
+  digitalWrite(pinRed2, LOW);
+  
+  //green
+  digitalWrite(pinGreen, HIGH);
+  delay(1000);
+  digitalWrite(pinGreen, LOW);
+  
+  //first red
+  digitalWrite(pinRed1, HIGH);
+  delay(1000);
+  digitalWrite(pinRed1, LOW);
+  
+  //first blue
+  //digitalWrite(pinBlue1, HIGH);
+  //delay(1000);
+  //digitalWrite(pinBlue1, LOW);
+  
+  //--------------------------------------------------------
+  
+  //blinkblues twice
+  digitalWrite(pinBlue1, HIGH);
+  digitalWrite(pinBlue2, HIGH);
+  delay(100);
+  digitalWrite(pinBlue1, LOW);
+  digitalWrite(pinBlue2, LOW);
+  delay(100);
+  digitalWrite(pinBlue1, HIGH);
+  digitalWrite(pinBlue2, HIGH);
+  delay(100);
+  digitalWrite(pinBlue1, LOW);
+  digitalWrite(pinBlue2, LOW);
+ 
+  //blink reds twice
+  digitalWrite(pinRed1, HIGH);
+  digitalWrite(pinRed2, HIGH);
+  delay(100);
+  digitalWrite(pinRed1, LOW); 
+  digitalWrite(pinRed2, LOW); 
+  delay(100);
+  digitalWrite(pinRed1, HIGH);
+  digitalWrite(pinRed2, HIGH);
+  delay(100);
+  digitalWrite(pinRed1, LOW); 
+  digitalWrite(pinRed2, LOW); 
+  
+  //blink green twice
+  digitalWrite(pinGreen, HIGH);
+  delay(100);
+  digitalWrite(pinGreen, LOW);
+  delay(100);
+  digitalWrite(pinGreen, HIGH);
+  delay(100);
+  digitalWrite(pinGreen, LOW);
+  
+  
+}

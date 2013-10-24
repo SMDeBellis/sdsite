@@ -1,5 +1,8 @@
-arduino css
+/*Copyright © 2013 Sean DeBellis
+arduino.css
+Date: 10-23-13
+*/
 
-#mainbody {background-color: white; display: block; margin-top: 2.5%; margin-left: 21%; width: 68.7%; padding-left: 2%; height: auto; border: 2px solid black}
+#mainbody {overflow: hidden; background-color: white; display: block; margin-top: 2.5%; margin-left: 21%; width: 68.7%; height: 100%; padding-left: 2%; border: 2px solid black}
 
-
+#mainbody .textbox {display: block; float: left; width: 50%; height: 100%; min-height: 300px}
