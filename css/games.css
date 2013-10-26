@@ -1,0 +1,9 @@
+/*Copyright © 2013 Sean DeBellis
+ * File: games.css
+ * Date: 10-26-13
+ * Desc: this file is the style sheet for the main
+ *  body of the games page of the website.
+ */
+
+#mainbody {display: block; float: left; width: 60%; height: 100%;
+    margin-left: 30%; margin-top: 2%}
