@@ -5,4 +5,4 @@
  *  body of the games page of the website.
  */
 
-#mainbody {display: block; float: left; margin-top: 1%; margin-left 50%}
+#mainbody {display: block; float: left; width: auto; height: auto; margin-top: 1%; margin-left: 2%}
