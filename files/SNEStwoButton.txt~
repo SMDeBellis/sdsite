@@ -1,0 +1,50 @@
+#include <SNESpaduino.h>
+#include <Servo.h>
+
+Servo tool;
+Servo moto;
+SNESpaduino pad(4,6,8);
+int servoState = 90;
+int motoState = 90;
+uint16_t btns = 0;
+
+void setup()
+{
+  tool.attach(10);
+  moto.attach(12);
+  tool.write(servoState);  
+  moto.write(motoState);
+}
+
+void loop()
+{
+  btns = pad.getButtons();
+  
+  if(btns & BTN_UP && btns & BTN_DOWN)
+  {}  
+  else if(btns & BTN_UP && servoState < 155)
+  {
+    servoState += 10;
+    tool.write(servoState);
+  }
+  else if(btns & BTN_DOWN && servoState > 10)
+  {
+    servoState -= 10;
+    tool.write(servoState);
+  }
+  
+  if(btns & BTN_LEFT && btns & BTN_RIGHT)
+  {}
+  else if(btns & BTN_RIGHT && motoState < 130)
+  {
+    motoState += 10;
+    moto.write(motoState);
+  }
+  else if(btns & BTN_LEFT && motoState > 30)
+  {
+    motoState -= 10;
+    moto.write(motoState); 
+  }
+
+  delay(50);
+}

@@ -3,6 +3,13 @@ arduino.css
 Date: 10-23-13
 */
 
-#mainbody {overflow: hidden; background-color: white; display: block; margin-top: 2.5%; margin-left: 21%; width: 68.7%; height: 100%; padding-left: 2%; border: 2px solid black}
+#title {width: 62%; height: 100%; margin-left: 21%}
+#title h3 {text-align: center}
+#title h2 {text-align: center; margin-top: 5%}
+#textbox {overflow: hidden; background-color: white; display: block; margin-left: 21%; width: 60%; height: 100%; padding-left: 2%; border: 2px solid black}
 
-#mainbody .textbox {display: block; float: left; width: 50%; height: 100%; min-height: 300px}
+#textfile {display: block; float: left; width: 65%; height: 100%; min-height: 400px}
+
+#video_player {display: block; float: left; margin-top: 10%; border: 2px solid black}
+#textbox span {font-size: 1em; margin-left: 10%} 
+

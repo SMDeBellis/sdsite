@@ -1,0 +1,13 @@
+/* Copyright © 2013 Sean DeBellis
+ * File: arduino_main.css
+ * Date: 10-25-13
+*/
+
+#mainbody {display: block; width: 71%; height: 100%; margin-left: 20.5%; margin-top: 2.5%; border: 2px solid black}
+#mainbody h2 {display: block; margin-left: auto; margin-right: auto; text-align: center}
+#projectlist {list-style-type: none}
+#projectlist a {width: 100%; height: 100%; text-align: center}
+#projectlist a:link {text-decoration: none}
+#projectlist a:visited {text-decoration: none}
+#projectlist a:hover {color: #ff0000}
+#projectlist a:active {text-decoration: none}

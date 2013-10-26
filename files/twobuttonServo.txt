@@ -1,0 +1,61 @@
+/*Copyright 2013 Sean DeBellis
+Arduino Micro Controller
+Two Button Servo Control */
+
+#include <Button.h>
+#include <Servo.h>
+
+
+
+Servo servo1;
+int buttonPin1 = 12;
+int buttonPin2 = 11;
+int buttonState1 = 0;
+int buttonState2 = 0;
+int servoState = 90;
+
+
+void setup(){
+  
+  servo1.attach(14);
+  servo1.write(servoState);
+  pinMode(buttonPin1, INPUT);
+  pinMode(buttonPin2, INPUT);
+  
+}
+
+void loop(){
+
+   buttonState1 = digitalRead(buttonPin1);
+   buttonState2 = digitalRead(buttonPin2);
+   
+   while(buttonState1 == HIGH || buttonState2 == HIGH)
+   {
+     
+     if(buttonState1 == HIGH && buttonState2 == HIGH);
+     
+     else if(buttonState1 == HIGH)
+     {  
+       servoState += 20;
+       if(servoState >= 160)
+         servoState = 160;
+       servo1.write(servoState);
+       delay(100);
+      }
+     
+     else
+     {
+       servoState -= 20;
+       if(servoState <= 10)
+         servoState = 10;
+       servo1.write(servoState);
+       delay(100);
+
+      }
+          
+     buttonState1 = digitalRead(buttonPin1);  
+     buttonState2 = digitalRead(buttonPin2);
+   }
+   
+}
+
