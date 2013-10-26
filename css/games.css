@@ -5,5 +5,5 @@
  *  body of the games page of the website.
  */
 
-#mainbody {display: block; float: left; width: 60%; height: 100%;
-    margin-left: 30%; margin-top: 2%}
+#mainbody {display: block; width: 60%; height: 100%;
+    margin-left: 30%}
