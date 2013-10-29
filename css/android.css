@@ -6,4 +6,9 @@
 */
 
 #mainbody {background-color: white; display: block; margin-top: 2.5%; margin-left: 21%; width: 68.7%; padding-left: 2%; height: auto/*; border: 2px solid black*/}
- 
+#mainbody a {text-size: 5em}
+#mainbody a:link {text-decoration: none}
+#mainbody a:visited {text-decoration: none}
+#mainbody a:hover {color: #ff0000}
+#mainbody a:active {text-decoration: none}
+
