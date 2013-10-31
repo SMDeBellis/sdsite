@@ -1,0 +1,15 @@
+/*Copyright © 2013 Sean DeBellis
+ * css for the flatulator page of sdrockstar website
+ * Date: 10-30-13
+*/
+
+#mainbody {width: 70.5%; height: 100%; margin-top: 2.5%; margin-left: 21%; padding-top: 0; background-color: white; border: 2px solid black}
+
+#mainbody .appscrnpics {width: 25%; height: 100%; margin-left:1%; margin-top: 1%}
+#mainbody p {margin-left: 5%; margin-right: 5%; margin-top: 2%}
+#appheader {border: 2px solid black}
+
+#appheader img {float: left; margin-left: 1%; margin-top: 1%}
+
+#appheader h2 {color: blue }
+
