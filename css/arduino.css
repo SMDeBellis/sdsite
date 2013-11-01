@@ -10,6 +10,6 @@ Date: 10-23-13
 
 #textfile {display: block; float: left; width: 65%; height: 100%; min-height: 400px}
 
-#video_player {display: block; float: left; margin-top: 10%; border: 2px solid black}
+#video_player {display: block; float: left; margin-left: .5%; margin-top: 10%}
 #textbox span {font-size: 1em; margin-left: 10%} 
 
